@@ -1,0 +1,7 @@
+h1 Repos:
+- if @repos.any?
+  ul.repos
+  - for repo in @repos
+    li: a href=repo[:link] = repo[:key]
+- else
+  p No new repos :(
