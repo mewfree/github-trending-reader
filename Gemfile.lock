@@ -1,6 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    execjs (2.6.0)
     mini_portile2 (2.0.0)
     nokogiri (1.6.7.1)
       mini_portile2 (~> 2.0.0.rc2)
@@ -15,6 +16,10 @@ GEM
     slim (3.0.6)
       temple (~> 0.7.3)
       tilt (>= 1.3.3, < 2.1)
+    stylus (1.0.1)
+      execjs
+      stylus-source
+    stylus-source (0.49.3)
     temple (0.7.6)
     tilt (2.0.1)
 
@@ -26,6 +31,7 @@ DEPENDENCIES
   redis
   sinatra
   slim
+  stylus
 
 BUNDLED WITH
    1.11.2

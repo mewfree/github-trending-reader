@@ -3,12 +3,18 @@ require 'net/http'
 require 'redis'
 require 'sinatra'
 require 'slim'
+require 'stylus'
+require 'stylus/tilt'
 
 # Initiating Redis
 redis = Redis.new
 
 # GitHub trending page's URI
 uri = URI('https://github.com/trending')
+
+get '/stylesheet.css' do
+  stylus :stylesheet
+end
 
 get '/' do
   html = Net::HTTP.get(uri)
