@@ -12,6 +12,8 @@ redis = Redis.new
 # GitHub trending page's URI
 uri = URI('https://github.com/trending')
 
+set :port, 1337
+
 get '/stylesheet.css' do
   stylus :stylesheet
 end
